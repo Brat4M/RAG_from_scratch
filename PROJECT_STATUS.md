@@ -27,7 +27,7 @@
 | **03** | Retrieval Engineering | 1 | `IN_PROGRESS` | 2 | ✅ 03.1, ✅ 03.2 |
 | **04** | Generation, Synthesis & Evaluation (RAGAS / TruLens) | 1 | `COMPLETED` | 1 | ✅ 04.1 |
 | **05** | LangChain RAG | 2 | `COMPLETED` | 1 | ✅ 05.1 |
-| **06** | LangGraph RAG | 2 | `NOT_STARTED` | 0 | — |
+| **06** | LangGraph RAG | 2 | `COMPLETED` | 1 | ✅ 06.1 |
 | **07** | Agentic RAG and DeepAgent | 2 | `NOT_STARTED` | 0 | — |
 | **08** | Memory Engineering | 2 | `NOT_STARTED` | 0 | — |
 | **09** | GraphRAG and Knowledge Graphs | 2 | `NOT_STARTED` | 0 | — |

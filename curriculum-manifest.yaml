@@ -106,8 +106,13 @@ tracks:
     slug: "06-langgraph-rag"
     title: "LangGraph RAG"
     stage: 2
-    status: "NOT_STARTED"
-    notebooks: []
+    status: "COMPLETED"
+    notebooks:
+      - id: "06-01"
+        file: "tracks/06-langgraph-rag/01_langgraph_stateful_rag.ipynb"
+        title: "LangGraph Stateful RAG: Cyclic State Machines, CRAG, Self-RAG & HITL"
+        status: "VALIDATED"
+        runtime_sec: 2
 
   - id: "07"
     slug: "07-agentic-rag"
