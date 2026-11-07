@@ -1,0 +1,20 @@
+{
+  "application_id": 99402,
+  "applicant": {
+    "entity_name": "Nebula Bio Labs",
+    "years_in_business": "three point five",
+    "owner_credit_score": "710"
+  },
+  "financials": {
+    "annual_revenue_usd": "680,000",
+    "debt_to_income_ratio": "0.38",
+    "collateral_valuation_usd": 200000.0
+  },
+  "loan_request": {
+    "requested_amount_usd": "150000",
+    "loan_purpose": "unknown_purpose_code_xyz",
+    "requested_term_months": "36"
+  },
+  "verified_documents": "tax_returns_last_2_years",
+  "risk_flags": null
+}

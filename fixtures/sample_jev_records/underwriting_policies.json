@@ -1,0 +1,81 @@
+{
+  "policies": [
+    {
+      "policy_id": "POL-COMM-001",
+      "tier": "TIER_1_PRIME",
+      "category": "commercial_lending",
+      "eligibility": {
+        "min_credit_score": 720,
+        "max_debt_to_income_ratio": 0.35,
+        "min_annual_revenue_usd": 500000.0,
+        "min_years_in_business": 3.0,
+        "collateral_coverage_ratio": 1.25
+      },
+      "decision_rules": {
+        "auto_approval_allowed": true,
+        "required_verifications": [
+          "tax_returns_last_2_years",
+          "bank_statements_last_6_months",
+          "ucc_lien_search"
+        ],
+        "score_weights": {
+          "credit_worthiness": 0.35,
+          "cashflow_capacity": 0.30,
+          "collateral_quality": 0.20,
+          "business_stability": 0.15
+        }
+      }
+    },
+    {
+      "policy_id": "POL-SME-002",
+      "tier": "TIER_2_STANDARD",
+      "category": "small_business_expansion",
+      "eligibility": {
+        "min_credit_score": 660,
+        "max_debt_to_income_ratio": 0.45,
+        "min_annual_revenue_usd": 200000.0,
+        "min_years_in_business": 2.0,
+        "collateral_coverage_ratio": 1.0
+      },
+      "decision_rules": {
+        "auto_approval_allowed": false,
+        "required_verifications": [
+          "tax_returns_last_1_year",
+          "bank_statements_last_3_months"
+        ],
+        "score_weights": {
+          "credit_worthiness": 0.30,
+          "cashflow_capacity": 0.35,
+          "collateral_quality": 0.20,
+          "business_stability": 0.15
+        }
+      }
+    },
+    {
+      "policy_id": "POL-HIGH-RISK-003",
+      "tier": "TIER_3_RESTRICTED",
+      "category": "distressed_refinance",
+      "eligibility": {
+        "min_credit_score": 600,
+        "max_debt_to_income_ratio": 0.55,
+        "min_annual_revenue_usd": 100000.0,
+        "min_years_in_business": 1.0,
+        "collateral_coverage_ratio": 1.5
+      },
+      "decision_rules": {
+        "auto_approval_allowed": false,
+        "required_verifications": [
+          "audited_financials",
+          "personal_guarantee",
+          "blanket_asset_pledge"
+        ],
+        "score_weights": {
+          "credit_worthiness": 0.20,
+          "cashflow_capacity": 0.30,
+          "collateral_quality": 0.40,
+          "business_stability": 0.10
+        }
+      }
+    }
+  ]
+}

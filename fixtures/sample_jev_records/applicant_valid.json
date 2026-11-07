@@ -1,0 +1,29 @@
+{
+  "application_id": "APP-2026-8941",
+  "applicant": {
+    "entity_name": "Apex Cloud Robotics LLC",
+    "incorporation_state": "DE",
+    "years_in_business": 4.5,
+    "naics_code": "541512",
+    "owner_credit_score": 755
+  },
+  "financials": {
+    "annual_revenue_usd": 1250000.0,
+    "monthly_net_profit_usd": 38000.0,
+    "current_debt_usd": 140000.0,
+    "monthly_debt_service_usd": 4200.0,
+    "debt_to_income_ratio": 0.28,
+    "collateral_valuation_usd": 450000.0
+  },
+  "loan_request": {
+    "requested_amount_usd": 250000.0,
+    "loan_purpose": "working_capital_expansion",
+    "requested_term_months": 36
+  },
+  "verified_documents": [
+    "tax_returns_last_2_years",
+    "bank_statements_last_6_months",
+    "ucc_lien_search"
+  ],
+  "risk_flags": []
+}

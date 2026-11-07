@@ -1,0 +1,31 @@
+{
+  "application_id": "APP-2026-9022",
+  "applicant": {
+    "entity_name": "Solaria Artisan Roasters Inc",
+    "incorporation_state": "OR",
+    "years_in_business": 2.2,
+    "naics_code": "311920",
+    "owner_credit_score": 665
+  },
+  "financials": {
+    "annual_revenue_usd": 280000.0,
+    "monthly_net_profit_usd": 7500.0,
+    "current_debt_usd": 95000.0,
+    "monthly_debt_service_usd": 2900.0,
+    "debt_to_income_ratio": 0.44,
+    "collateral_valuation_usd": 110000.0
+  },
+  "loan_request": {
+    "requested_amount_usd": 100000.0,
+    "loan_purpose": "equipment_purchase",
+    "requested_term_months": 48
+  },
+  "verified_documents": [
+    "tax_returns_last_1_year",
+    "bank_statements_last_3_months"
+  ],
+  "risk_flags": [
+    "marginal_credit_score",
+    "recent_commercial_lease_renegotiation"
+  ]
+}

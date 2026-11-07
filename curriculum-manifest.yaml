@@ -172,8 +172,11 @@ tracks:
     slug: "12-typesafe-jev"
     title: "TypeSafe Jev Decision Engine"
     stage: 2
-    status: "NOT_STARTED"
-    notebooks: []
+    status: "COMPLETED"
+    notebooks:
+      - filename: "01_typesafe_jev_decision_engine.ipynb"
+        title: "TypeSafe JEV Decision Engine & JSON-Element-Vector Indexing"
+        status: "COMPLETED"
 
   - id: "13"
     slug: "13-decision-intelligence"

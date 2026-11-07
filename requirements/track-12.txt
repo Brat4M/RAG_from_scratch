@@ -1,2 +1,4 @@
-# Track 12 — TypeSafe Jev Decision Engine
-# Verified TypeSafe Jev package
+# Track 12 — TypeSafe JEV Decision Engine
+pydantic>=2.0.0
+numpy
+matplotlib
