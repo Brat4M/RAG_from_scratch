@@ -1,2 +1,7 @@
 # Track 09 — GraphRAG and Knowledge Graphs
+networkx>=3.0
+matplotlib>=3.7.0
+numpy>=1.24.0
+pydantic>=2.0.0
+# Optional for live Neo4j database deployments:
 # neo4j>=5.0

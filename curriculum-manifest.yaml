@@ -142,8 +142,11 @@ tracks:
     slug: "09-graphrag"
     title: "GraphRAG and Knowledge Graphs"
     stage: 2
-    status: "NOT_STARTED"
-    notebooks: []
+    status: "COMPLETED"
+    notebooks:
+      - filename: "01_graphrag_knowledge_graphs.ipynb"
+        title: "GraphRAG and Knowledge Graphs"
+        status: "COMPLETED"
 
   - id: "10"
     slug: "10-multimodal-rag"
