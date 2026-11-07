@@ -1,2 +1,5 @@
 # Track 15 — Evaluation and Observability
-# ragas (optional), arize-phoenix (optional)
+opentelemetry-api>=1.20.0
+opentelemetry-sdk>=1.20.0
+matplotlib>=3.8.0
+numpy>=1.24.0

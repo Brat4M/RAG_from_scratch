@@ -1,0 +1,101 @@
+[
+  {
+    "sample_id": "eval_01_direct_fact",
+    "query": "What is the primary cooling mechanism and operational temperature threshold for the H100 datacenter pod?",
+    "retrieved_contexts": [
+      "Doc 0: The H100 GPU cluster utilizes an automated direct-to-chip liquid cooling loop circulating deionized liquid coolant. Under sustained peak matrix multiply workloads, operational core temperatures are stabilized at 68°C.",
+      "Doc 1: Emergency thermal protection protocols trigger an immediate hardware throttle if junction temperature exceeds 82°C, and force an automated thermal shutdown threshold at 85°C to prevent silicon degradation."
+    ],
+    "ground_truth": "The primary cooling mechanism is a direct-to-chip liquid cooling loop, and the thermal shutdown threshold is 85°C.",
+    "generated_answer": "The H100 datacenter pod employs a direct-to-chip liquid cooling loop [Doc 0]. Emergency safety protocols enforce an automated thermal shutdown threshold at 85°C to avoid silicon damage [Doc 1].",
+    "human_review": {
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevance": 1.0,
+      "citation_accuracy": 1.0,
+      "factual_correctness": 1.0,
+      "completeness": 1.0,
+      "annotator_notes": "Perfect groundedness, correct multi-hop retrieval coverage, and exact citation alignment."
+    }
+  },
+  {
+    "sample_id": "eval_02_hallucination",
+    "query": "What cryptographic algorithm is mandated for database data at rest under Corporate Security Standard Sec-402?",
+    "retrieved_contexts": [
+      "Doc 0: Standard Sec-402 mandates that all network transmission across cluster boundaries must enforce TLS 1.3 with forward secrecy cipher suites.",
+      "Doc 1: Inter-service RPC endpoints must authenticate using mutual TLS (mTLS) backed by short-lived X.509 certificates renewed every 24 hours."
+    ],
+    "ground_truth": "Sec-402 retrieved documents only specify TLS 1.3 for network transmission and mTLS for RPCs; data at rest requirements are not documented in the provided excerpts.",
+    "generated_answer": "Under Standard Sec-402, database data at rest must be encrypted using quantum-resistant AES-512 lattice algorithms with rotating RSA-8192 master root keys [Doc 0].",
+    "human_review": {
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 0.0,
+      "answer_relevance": 0.35,
+      "citation_accuracy": 0.0,
+      "factual_correctness": 0.0,
+      "completeness": 0.0,
+      "annotator_notes": "Severe hallucination. Neither context mentions data at rest or AES-512. Model fabricated cryptographic specifications."
+    }
+  },
+  {
+    "sample_id": "eval_03_incomplete_retrieval",
+    "query": "Which three geographic regions are designated as active disaster recovery failover targets for Tier-1 storage?",
+    "retrieved_contexts": [
+      "Doc 0: Tier-1 resilient block storage maintains synchronous replication across us-east-1 and us-west-2 availability zones with sub-5ms latency."
+    ],
+    "ground_truth": "Tier-1 disaster recovery mandates three active regions: us-east-1, us-west-2, and eu-central-1.",
+    "generated_answer": "Tier-1 resilient block storage is replicated across two designated regions: us-east-1 and us-west-2 [Doc 0].",
+    "human_review": {
+      "context_precision": 1.0,
+      "context_recall": 0.67,
+      "faithfulness": 1.0,
+      "answer_relevance": 0.85,
+      "citation_accuracy": 1.0,
+      "factual_correctness": 0.67,
+      "completeness": 0.67,
+      "annotator_notes": "Model faithfully reflected retrieved context, but context was incomplete because retrieval missed the eu-central-1 document."
+    }
+  },
+  {
+    "sample_id": "eval_04_citation_mismatch",
+    "query": "What is the contractual uptime SLA commitment and monthly billing credit for Enterprise Tier clients?",
+    "retrieved_contexts": [
+      "Doc 0: Enterprise Tier service level agreements guarantee 99.99% monthly uptime availability across all managed cluster nodes.",
+      "Doc 1: In the event of an unexcused SLA breach exceeding 30 minutes, eligible enterprise accounts receive a 25% credit on their monthly recurring billing."
+    ],
+    "ground_truth": "The contractual uptime SLA is 99.99%, and eligible clients receive a 25% monthly billing credit for unexcused breaches exceeding 30 minutes.",
+    "generated_answer": "Enterprise Tier contracts guarantee 99.99% monthly uptime availability [Doc 1], and clients receive a 25% monthly recurring billing credit for breaches [Doc 0].",
+    "human_review": {
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevance": 1.0,
+      "citation_accuracy": 0.0,
+      "factual_correctness": 1.0,
+      "completeness": 1.0,
+      "annotator_notes": "Content is completely factual and grounded, but citations are swapped: uptime is in Doc 0 cited as Doc 1, and credits are in Doc 1 cited as Doc 0."
+    }
+  },
+  {
+    "sample_id": "eval_05_semantic_drift",
+    "query": "Can you suggest the best Italian restaurant and pasta tasting menu near the downtown tech convention center?",
+    "retrieved_contexts": [
+      "Doc 0: Datacenter physical security requires multi-factor biometric badge access and 24/7 video monitoring at all facility ingress corridors.",
+      "Doc 1: Backup diesel generators maintain 72 hours of uninterrupted emergency power in N+2 redundant electrical topology."
+    ],
+    "ground_truth": "The technical corpus does not contain restaurant or dining recommendations.",
+    "generated_answer": "I am an enterprise datacenter assistant. The retrieved enterprise documentation covers datacenter physical security and backup power systems, so I cannot provide dining recommendations.",
+    "human_review": {
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevance": 0.1,
+      "citation_accuracy": 1.0,
+      "factual_correctness": 1.0,
+      "completeness": 1.0,
+      "annotator_notes": "Out-of-distribution drift query. System appropriately triggered an epistemic refusal rather than hallucinating restaurant advice."
+    }
+  }
+]

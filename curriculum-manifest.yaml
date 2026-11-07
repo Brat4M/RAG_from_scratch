@@ -202,8 +202,11 @@ tracks:
     slug: "15-evaluation-observability"
     title: "Evaluation and Observability"
     stage: 3
-    status: "NOT_STARTED"
-    notebooks: []
+    status: "COMPLETED"
+    notebooks:
+      - filename: "01_evaluation_and_observability.ipynb"
+        title: "RAG Evaluation & Observability: OpenTelemetry Tracing, Automated Metrics, Semantic Drift & Continuous Telemetry"
+        status: "COMPLETED"
 
   - id: "16"
     slug: "16-finetuning-deployment"
