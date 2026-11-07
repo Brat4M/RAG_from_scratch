@@ -1,0 +1,147 @@
+{
+  "decision_problem": "Enterprise Hybrid Cloud & Vector Database Infrastructure Vendor Selection",
+  "objective": "Select optimal vector database infrastructure provider balancing performance, security compliance, operating cost, and SLA guarantees.",
+  "criteria": [
+    {
+      "name": "latency_p99_ms",
+      "weight": 0.25,
+      "criterion_type": "cost",
+      "unit": "milliseconds",
+      "description": "99th percentile query latency under 10k QPS load"
+    },
+    {
+      "name": "throughput_qps",
+      "weight": 0.20,
+      "criterion_type": "benefit",
+      "unit": "queries_per_sec",
+      "description": "Sustained peak queries per second"
+    },
+    {
+      "name": "security_compliance_score",
+      "weight": 0.25,
+      "criterion_type": "benefit",
+      "unit": "score_0_to_100",
+      "description": "Audited security compliance score (SOC2 Type II, HIPAA, ISO27001)"
+    },
+    {
+      "name": "annual_tco_usd",
+      "weight": 0.20,
+      "criterion_type": "cost",
+      "unit": "USD",
+      "description": "Annual total cost of ownership including infrastructure, licensing, and egress"
+    },
+    {
+      "name": "sla_uptime_percentage",
+      "weight": 0.10,
+      "criterion_type": "benefit",
+      "unit": "percentage",
+      "description": "Contractual uptime service level agreement"
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "vendor_alpha",
+      "name": "ApexVector Enterprise",
+      "attributes": {
+        "latency_p99_ms": 14.5,
+        "throughput_qps": 8500.0,
+        "security_compliance_score": 96.0,
+        "annual_tco_usd": 68000.0,
+        "sla_uptime_percentage": 99.99
+      },
+      "evidence_provenance": [
+        "okf://benchmarks/apexvector_ann_perf.json#chunk-1",
+        "jev://vendors/alpha/soc2_audit_report.json#/certifications/soc2_type2"
+      ],
+      "confidence": 0.94,
+      "risk_factors": [
+        {"name": "vendor_lock_in", "probability": 0.20, "impact": 6.0},
+        {"name": "cost_escalation", "probability": 0.15, "impact": 4.5}
+      ]
+    },
+    {
+      "id": "vendor_beta",
+      "name": "NovaScale Vector Cloud",
+      "attributes": {
+        "latency_p99_ms": 22.0,
+        "throughput_qps": 9800.0,
+        "security_compliance_score": 88.0,
+        "annual_tco_usd": 42000.0,
+        "sla_uptime_percentage": 99.95
+      },
+      "evidence_provenance": [
+        "okf://benchmarks/novascale_load_test.json#chunk-3",
+        "jev://vendors/beta/pricing_schedule.json#/tiers/enterprise_scale"
+      ],
+      "confidence": 0.91,
+      "risk_factors": [
+        {"name": "sla_breach_outage", "probability": 0.10, "impact": 7.0},
+        {"name": "support_latency", "probability": 0.25, "impact": 3.0}
+      ]
+    },
+    {
+      "id": "vendor_gamma",
+      "name": "OpenVector BareMetal Deploy",
+      "attributes": {
+        "latency_p99_ms": 9.2,
+        "throughput_qps": 12000.0,
+        "security_compliance_score": 74.0,
+        "annual_tco_usd": 31000.0,
+        "sla_uptime_percentage": 99.90
+      },
+      "evidence_provenance": [
+        "okf://architecture/openvector_baremetal.json#chunk-2",
+        "jev://vendors/gamma/internal_audit.json#/infosec/findings"
+      ],
+      "confidence": 0.82,
+      "risk_factors": [
+        {"name": "operational_overhead", "probability": 0.65, "impact": 8.0},
+        {"name": "compliance_gap_fine", "probability": 0.40, "impact": 9.5}
+      ]
+    },
+    {
+      "id": "vendor_delta",
+      "name": "ChromaScale Managed Dedicated",
+      "attributes": {
+        "latency_p99_ms": 16.0,
+        "throughput_qps": 7200.0,
+        "security_compliance_score": 92.0,
+        "annual_tco_usd": 55000.0,
+        "sla_uptime_percentage": 99.99
+      },
+      "evidence_provenance": [
+        "okf://specs/chromascale_architecture.json#chunk-1",
+        "jev://vendors/delta/compliance_cert.json#/certifications/iso27001"
+      ],
+      "confidence": 0.96,
+      "risk_factors": [
+        {"name": "feature_parity_lag", "probability": 0.15, "impact": 3.5},
+        {"name": "integration_migration_friction", "probability": 0.20, "impact": 4.0}
+      ]
+    }
+  ],
+  "budget_constraint_usd": 70000.0,
+  "policy_gates": [
+    {
+      "name": "mandatory_security_threshold",
+      "criterion": "security_compliance_score",
+      "operator": ">=",
+      "threshold": 80.0,
+      "rejection_action": "REJECTED"
+    },
+    {
+      "name": "sla_critical_gate",
+      "criterion": "sla_uptime_percentage",
+      "operator": ">=",
+      "threshold": 99.95,
+      "rejection_action": "ESCALATED_HUMAN_REVIEW"
+    },
+    {
+      "name": "max_acceptable_p99_latency",
+      "criterion": "latency_p99_ms",
+      "operator": "<=",
+      "threshold": 25.0,
+      "rejection_action": "REJECTED"
+    }
+  ]
+}

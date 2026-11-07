@@ -1,0 +1,90 @@
+{
+  "decision_problem": "Commercial Credit Facility Origination & Risk Allocation",
+  "objective": "Determine loan underwriting verdict (Approve, Abstain, Escalate, Reject) and credit limit pricing based on retrieved corporate financial disclosures and credit risk models.",
+  "applicants": [
+    {
+      "applicant_id": "app_acme_logistics",
+      "name": "Acme Logistics Corp",
+      "financials": {
+        "debt_to_income_ratio": 0.32,
+        "credit_score": 745.0,
+        "annual_revenue_usd": 4200000.0,
+        "liquidity_ratio": 1.85,
+        "requested_facility_usd": 600000.0
+      },
+      "evidence_provenance": [
+        "okf://entities/acme_logistics/financial_audit_2025.json#balance_sheet",
+        "jev://underwriting/acme/credit_bureau_pull.json#/score"
+      ],
+      "evidence_completeness": 0.98,
+      "risk_indicators": [
+        {"factor": "industry_fuel_volatility", "probability": 0.25, "impact": 4.0},
+        {"factor": "customer_concentration_risk", "probability": 0.15, "impact": 3.0}
+      ]
+    },
+    {
+      "applicant_id": "app_vanguard_bio",
+      "name": "Vanguard BioSciences Inc",
+      "financials": {
+        "debt_to_income_ratio": 0.58,
+        "credit_score": 670.0,
+        "annual_revenue_usd": 1800000.0,
+        "liquidity_ratio": 1.10,
+        "requested_facility_usd": 500000.0
+      },
+      "evidence_provenance": [
+        "okf://entities/vanguard_bio/quarterly_filing_q4.json#cash_flow"
+      ],
+      "evidence_completeness": 0.88,
+      "risk_indicators": [
+        {"factor": "clinical_trial_regulatory_delay", "probability": 0.45, "impact": 8.5},
+        {"factor": "cash_burn_runway", "probability": 0.50, "impact": 7.0}
+      ]
+    },
+    {
+      "applicant_id": "app_solaris_energy",
+      "name": "Solaris Grid Technologies",
+      "financials": {
+        "debt_to_income_ratio": 0.41,
+        "credit_score": 710.0,
+        "annual_revenue_usd": 8500000.0,
+        "liquidity_ratio": 1.45,
+        "requested_facility_usd": 1200000.0
+      },
+      "evidence_provenance": [
+        "okf://entities/solaris_grid/annual_report_2025.json#full",
+        "jev://underwriting/solaris/audited_tax_returns.json#/verified"
+      ],
+      "evidence_completeness": 0.95,
+      "risk_indicators": [
+        {"factor": "subsidy_regulatory_sunset", "probability": 0.30, "impact": 5.0},
+        {"factor": "supply_chain_silicon_leadtime", "probability": 0.20, "impact": 4.0}
+      ]
+    },
+    {
+      "applicant_id": "app_phantom_ventures",
+      "name": "Phantom Stealth LLC",
+      "financials": {
+        "debt_to_income_ratio": 0.85,
+        "credit_score": 580.0,
+        "annual_revenue_usd": 400000.0,
+        "liquidity_ratio": 0.65,
+        "requested_facility_usd": 350000.0
+      },
+      "evidence_provenance": [],
+      "evidence_completeness": 0.35,
+      "risk_indicators": [
+        {"factor": "missing_tax_transcripts", "probability": 0.90, "impact": 9.5},
+        {"factor": "unverified_collateral", "probability": 0.80, "impact": 9.0}
+      ]
+    }
+  ],
+  "underwriting_policy": {
+    "min_credit_score": 650.0,
+    "max_dti_ratio": 0.50,
+    "min_liquidity_ratio": 1.20,
+    "min_evidence_completeness": 0.75,
+    "escalate_dti_range": [0.45, 0.55],
+    "high_risk_loss_threshold_usd": 150000.0
+  }
+}

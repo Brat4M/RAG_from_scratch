@@ -182,8 +182,11 @@ tracks:
     slug: "13-decision-intelligence"
     title: "Decision Intelligence with RAG"
     stage: 2
-    status: "NOT_STARTED"
-    notebooks: []
+    status: "COMPLETED"
+    notebooks:
+      - filename: "01_decision_intelligence_with_rag.ipynb"
+        title: "Decision Intelligence with RAG: MCDA, Quantitative Risk Scoring, Economic Optimization, and Cryptographic Auditing"
+        status: "COMPLETED"
 
   - id: "14"
     slug: "14-enterprise-rag"
