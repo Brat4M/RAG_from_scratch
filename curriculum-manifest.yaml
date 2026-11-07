@@ -43,7 +43,7 @@ tracks:
     slug: "02-embeddings-vector-search"
     title: "Embeddings and Vector Search"
     stage: 1
-    status: "IN_PROGRESS"
+    status: "VALIDATED"
     notebooks:
       - id: "02.1"
         file: "tracks/02-embeddings-vector-search/01_dense_embeddings_and_distance_metrics.ipynb"
@@ -53,6 +53,11 @@ tracks:
       - id: "02.2"
         file: "tracks/02-embeddings-vector-search/02_vector_indexing_and_ann.ipynb"
         title: "Vector Indexing & Approximate Nearest Neighbor (ANN) Search (HNSW & IVF)"
+        status: "VALIDATED"
+        runtime_sec: 1
+      - id: "02.3"
+        file: "tracks/02-embeddings-vector-search/03_chromadb_local_vector_store.ipynb"
+        title: "Production Local Vector Storage with ChromaDB"
         status: "VALIDATED"
         runtime_sec: 1
 

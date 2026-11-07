@@ -23,7 +23,7 @@
 |---|---|---|---|---|---|
 | **00** | Foundations and Environment | 1 | `COMPLETED` | 1 | ✅ 00.1 |
 | **01** | Ingestion and Chunking | 1 | `COMPLETED` | 3 | ✅ 01.1, ✅ 01.2, ✅ 01.3 |
-| **02** | Embeddings and Vector Search | 1 | `IN_PROGRESS` | 2 | ✅ 02.1, ✅ 02.2 |
+| **02** | Embeddings and Vector Search | 1 | `COMPLETED` | 3 | ✅ 02.1, ✅ 02.2, ✅ 02.3 |
 | **03** | Retrieval Engineering | 1 | `NOT_STARTED` | 0 | — |
 | **04** | RAG from Scratch | 1 | `NOT_STARTED` | 0 | — |
 | **05** | LangChain RAG | 2 | `NOT_STARTED` | 0 | — |
