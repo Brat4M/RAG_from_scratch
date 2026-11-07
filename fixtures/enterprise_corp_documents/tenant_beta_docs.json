@@ -1,0 +1,30 @@
+[
+  {
+    "id": "doc_beta_strat_001",
+    "title": "Beta Logistics Expansion Roadmap",
+    "tenant_id": "tenant_beta",
+    "classification": "INTERNAL",
+    "owner": "ops_vp_01",
+    "allowed_roles": ["operations", "executive", "admin"],
+    "allowed_groups": ["beta_logistics_leads"],
+    "allowed_users": ["ops_vp_01"],
+    "denied_users": [],
+    "content": "Beta enterprise logistics strategy focuses on automated warehouse fulfillment and route optimization across 14 regional hubs.",
+    "version": 1,
+    "tags": ["logistics", "strategy", "operations"]
+  },
+  {
+    "id": "doc_beta_cust_002",
+    "title": "Beta Customer PII and Loyalty Accounts",
+    "tenant_id": "tenant_beta",
+    "classification": "RESTRICTED",
+    "owner": "crm_lead_01",
+    "allowed_roles": ["data_protection_officer", "admin"],
+    "allowed_groups": ["compliance_team"],
+    "allowed_users": ["crm_lead_01"],
+    "denied_users": ["contractor_01"],
+    "content": "Customer Account: Jane Doe, SSN: 123-45-6789, Email: jane.doe@examplecorp.com, Loyalty Tier: Platinum.",
+    "version": 1,
+    "tags": ["crm", "pii", "customers"]
+  }
+]

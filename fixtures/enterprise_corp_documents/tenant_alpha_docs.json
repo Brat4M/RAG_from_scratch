@@ -1,0 +1,44 @@
+[
+  {
+    "id": "doc_alpha_sec_001",
+    "title": "Alpha Core Architecture Blueprint",
+    "tenant_id": "tenant_alpha",
+    "classification": "CONFIDENTIAL",
+    "owner": "eng_lead_01",
+    "allowed_roles": ["engineer", "architect", "admin"],
+    "allowed_groups": ["engineering_core"],
+    "allowed_users": ["eng_lead_01", "dev_02"],
+    "denied_users": ["intern_01"],
+    "content": "Alpha Microservices Architecture utilizes gRPC and Kafka with mTLS encryption between all enterprise broker nodes.",
+    "version": 1,
+    "tags": ["architecture", "backend", "grpc"]
+  },
+  {
+    "id": "doc_alpha_fin_002",
+    "title": "Alpha Q3 Payroll and Compensation Ledger",
+    "tenant_id": "tenant_alpha",
+    "classification": "RESTRICTED",
+    "owner": "cfo_01",
+    "allowed_roles": ["finance_executive", "admin"],
+    "allowed_groups": ["executive_board", "payroll_admins"],
+    "allowed_users": ["cfo_01", "hr_director_01"],
+    "denied_users": ["dev_02", "eng_lead_01"],
+    "content": "Confidential compensation details: total Q3 executive payroll bonus pool reached $4,200,000 across designated VP tiers.",
+    "version": 2,
+    "tags": ["finance", "payroll", "executive"]
+  },
+  {
+    "id": "doc_alpha_pub_003",
+    "title": "Alpha Platform Public Product Overview",
+    "tenant_id": "tenant_alpha",
+    "classification": "PUBLIC",
+    "owner": "pm_01",
+    "allowed_roles": ["viewer", "engineer", "analyst", "guest"],
+    "allowed_groups": ["all_employees", "external_partners"],
+    "allowed_users": [],
+    "denied_users": [],
+    "content": "Alpha Platform delivers an autonomous enterprise knowledge assistant powered by semantic search and vector indexing.",
+    "version": 1,
+    "tags": ["public", "product", "overview"]
+  }
+]

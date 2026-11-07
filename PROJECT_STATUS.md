@@ -1,8 +1,8 @@
 # Project Status Dashboard — RAG Engineering Academy
 
-**Current Stage:** Stage 1 — Foundations  
+**Current Stage:** Stage 3 — Enterprise, Evaluation & Deployment  
 **Overall Status:** IN_PROGRESS  
-**Last Updated:** 2026-11-07  
+**Last Updated:** 2026-11-08  
 
 ---
 
@@ -12,8 +12,8 @@
 |---|---|---|---|---|
 | **Stage 0** | Discovery and Initialization | Infrastructure, Config, Docs, Tests | **COMPLETED** | 2026-11-07 |
 | **Stage 1** | Foundations | Tracks 00–04 | **COMPLETED** | 2026-11-07 |
-| **Stage 2** | Frameworks & Intelligent Retrieval | Tracks 05–13 | **IN_PROGRESS** | 2026-11-08 |
-| **Stage 3** | Enterprise, Evaluation & Deployment | Tracks 14–16 | NOT_STARTED | — |
+| **Stage 2** | Frameworks & Intelligent Retrieval | Tracks 05–13 | **COMPLETED** | 2026-11-08 |
+| **Stage 3** | Enterprise, Evaluation & Deployment | Tracks 14–16 | **IN_PROGRESS** | 2026-11-08 |
 
 ---
 
@@ -35,7 +35,7 @@
 | **11** | Google Open Knowledge Format (OKF) | 2 | `COMPLETED` | 1 | ✅ 11.1 |
 | **12** | TypeSafe JEV Decision Engine | 2 | `COMPLETED` | 1 | ✅ 12.1 |
 | **13** | Decision Intelligence with RAG | 2 | `COMPLETED` | 1 | ✅ 13.1 |
-| **14** | Enterprise RAG | 3 | `NOT_STARTED` | 0 | — |
+| **14** | Enterprise RAG | 3 | `COMPLETED` | 1 | ✅ 14.1 |
 | **15** | Evaluation and Observability | 3 | `NOT_STARTED` | 0 | — |
 | **16** | Fine-Tuning versus RAG and Deployment | 3 | `NOT_STARTED` | 0 | — |
 
