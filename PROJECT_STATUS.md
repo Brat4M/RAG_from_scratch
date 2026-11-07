@@ -31,7 +31,7 @@
 | **07** | Agentic RAG and DeepAgent | 2 | `COMPLETED` | 1 | ✅ 07.1 |
 | **08** | Memory Engineering | 2 | `COMPLETED` | 1 | ✅ 08.1 |
 | **09** | GraphRAG and Knowledge Graphs | 2 | `COMPLETED` | 1 | ✅ 09.1 |
-| **10** | Multimodal RAG | 2 | `NOT_STARTED` | 0 | — |
+| **10** | Multimodal RAG | 2 | `COMPLETED` | 1 | ✅ 10.1 |
 | **11** | Google Open Knowledge Format (OKF) | 2 | `NOT_STARTED` | 0 | — |
 | **12** | TypeSafe Jev Decision Engine | 2 | `NOT_STARTED` | 0 | — |
 | **13** | Decision Intelligence with RAG | 2 | `NOT_STARTED` | 0 | — |

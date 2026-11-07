@@ -1,3 +1,7 @@
 # Track 10 — Multimodal RAG
-# pillow>=10.0
-# multimodal models after review
+pillow>=10.0.0
+pymupdf>=2.0.0
+pypdf>=4.0.0
+matplotlib>=3.8.0
+numpy>=1.26.0
+pydantic>=2.0.0
