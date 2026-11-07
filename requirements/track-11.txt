@@ -1,2 +1,7 @@
 # Track 11 — Google Open Knowledge Format (OKF)
-# Official OKF specification tools (verified before install)
+# Official OKF specification tools, YAML frontmatter parsing, schema validation, and knowledge graph navigation
+pyyaml>=6.0
+jsonschema>=4.20
+pydantic>=2.0
+networkx>=3.0
+matplotlib>=3.9

@@ -162,8 +162,11 @@ tracks:
     slug: "11-google-okf"
     title: "Google Open Knowledge Format (OKF)"
     stage: 2
-    status: "NOT_STARTED"
-    notebooks: []
+    status: "COMPLETED"
+    notebooks:
+      - filename: "01_google_open_knowledge_format.ipynb"
+        title: "Google Open Knowledge Format (OKF)"
+        status: "COMPLETED"
 
   - id: "12"
     slug: "12-typesafe-jev"
