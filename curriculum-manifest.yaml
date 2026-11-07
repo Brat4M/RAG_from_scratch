@@ -130,8 +130,13 @@ tracks:
     slug: "08-memory-engineering"
     title: "Memory Engineering"
     stage: 2
-    status: "NOT_STARTED"
-    notebooks: []
+    status: "COMPLETED"
+    notebooks:
+      - id: "08-01"
+        file: "tracks/08-memory-engineering/01_memory_engineering.ipynb"
+        title: "Memory Engineering for RAG: Short-Term Buffers, Semantic Episodic Memory, Entity Graphs, and Consolidation"
+        status: "VALIDATED"
+        runtime_sec: 1
 
   - id: "09"
     slug: "09-graphrag"

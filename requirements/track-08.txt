@@ -1,2 +1,3 @@
 # Track 08 — Memory Engineering
-# Install when Track 8 is approved
+# Standard dependencies (numpy, matplotlib, pydantic) are in base.txt
+# Optional LLM integration uses groq (already installed in base/track-00)

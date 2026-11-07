@@ -29,7 +29,7 @@
 | **05** | LangChain RAG | 2 | `COMPLETED` | 1 | ✅ 05.1 |
 | **06** | LangGraph RAG | 2 | `COMPLETED` | 1 | ✅ 06.1 |
 | **07** | Agentic RAG and DeepAgent | 2 | `COMPLETED` | 1 | ✅ 07.1 |
-| **08** | Memory Engineering | 2 | `NOT_STARTED` | 0 | — |
+| **08** | Memory Engineering | 2 | `COMPLETED` | 1 | ✅ 08.1 |
 | **09** | GraphRAG and Knowledge Graphs | 2 | `NOT_STARTED` | 0 | — |
 | **10** | Multimodal RAG | 2 | `NOT_STARTED` | 0 | — |
 | **11** | Google Open Knowledge Format (OKF) | 2 | `NOT_STARTED` | 0 | — |
