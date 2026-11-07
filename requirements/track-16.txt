@@ -1,2 +1,6 @@
 # Track 16 — Fine-Tuning versus RAG and Deployment
-# fastapi, uvicorn (already in base env)
+fastapi>=0.110.0
+uvicorn>=0.28.0
+starlette>=0.36.0
+onnxruntime>=1.17.0
+

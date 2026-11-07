@@ -212,5 +212,8 @@ tracks:
     slug: "16-finetuning-deployment"
     title: "Fine-Tuning versus RAG and Deployment"
     stage: 3
-    status: "NOT_STARTED"
-    notebooks: []
+    status: "COMPLETED"
+    notebooks:
+      - filename: "01_finetuning_vs_rag_and_deployment.ipynb"
+        title: "Fine-Tuning vs. RAG & Production Deployment: LoRA Adaptation, CPU Quantization, FastAPI Serving, and Enterprise Auditing"
+        status: "COMPLETED"

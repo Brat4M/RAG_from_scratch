@@ -583,12 +583,12 @@ class SemanticDriftDetector:
         K_YY = rbf_kernel(Y, Y)
         K_XY = rbf_kernel(X, Y)
 
-        t_xx = (float(np.sum(K_XX)) - float(np.trace(K_XX))) / (m * (m - 1)) if m > 1 else 1.0
-        t_yy = (float(np.sum(K_YY)) - float(np.trace(K_YY))) / (n * (n - 1)) if n > 1 else 1.0
-        t_xy = 2.0 * float(np.sum(K_XY)) / (m * n)
+        t_xx = float(np.mean(K_XX))
+        t_yy = float(np.mean(K_YY))
+        t_xy = 2.0 * float(np.mean(K_XY))
 
-        mmd_sq = t_xx + t_yy - t_xy
-        return float(math.sqrt(max(0.0, float(mmd_sq))))
+        mmd_sq = max(0.0, t_xx + t_yy - t_xy)
+        return float(math.sqrt(mmd_sq))
 
     def evaluate_drift(self, production_queries: Sequence[str]) -> DriftReport:
         """Assess semantic drift on a production batch of queries relative to baseline."""

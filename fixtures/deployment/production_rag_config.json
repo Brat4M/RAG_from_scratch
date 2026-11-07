@@ -1,0 +1,36 @@
+{
+  "service_name": "rag-production-engine",
+  "version": "1.0.0",
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8000,
+    "workers": 2,
+    "timeout_seconds": 30.0,
+    "max_concurrency": 50
+  },
+  "retrieval": {
+    "vector_store_path": "./.chroma_production",
+    "collection_name": "enterprise_kb",
+    "top_k": 3,
+    "similarity_threshold": 0.65,
+    "hybrid_bm25_enabled": true
+  },
+  "inference": {
+    "quantization_mode": "INT8_SYMMETRIC",
+    "lora_adapter_enabled": true,
+    "lora_rank": 8,
+    "lora_alpha": 16.0,
+    "temperature": 0.1,
+    "max_tokens": 512
+  },
+  "observability": {
+    "opentelemetry_enabled": true,
+    "metrics_endpoint": "/v1/metrics",
+    "health_endpoint": "/health"
+  },
+  "security": {
+    "non_root_user_uid": 10001,
+    "acl_enforcement": true,
+    "require_tenant_id": true
+  }
+}

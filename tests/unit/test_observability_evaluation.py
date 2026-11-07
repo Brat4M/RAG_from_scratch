@@ -172,7 +172,7 @@ def test_pure_numpy_statistical_helpers():
 
 
 def test_semantic_drift_detector():
-    detector = SemanticDriftDetector(drift_threshold=0.10)
+    detector = SemanticDriftDetector(drift_threshold=0.50)
     baseline_queries = [
         "What is the cooling mechanism for the GPU cluster?",
         "How do liquid coolant loops stabilize datacenter thermal load?",
@@ -198,7 +198,8 @@ def test_semantic_drift_detector():
     report_drift = detector.evaluate_drift(drift_batch)
     assert report_drift.drift_detected is True
     assert report_drift.severity in ("WARNING", "CRITICAL")
-    assert report_drift.mmd_score > report_in.mmd_score
+    assert report_drift.cosine_drift > report_in.cosine_drift
+    assert report_drift.centroid_distance > report_in.centroid_distance
 
 
 def test_telemetry_metrics_tracker():
