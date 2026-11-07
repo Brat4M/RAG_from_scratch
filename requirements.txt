@@ -1,0 +1,8 @@
+chromadb
+python-dotenv
+groq
+numpy
+pandas
+jupyterlab
+ipykernel
+pypdf
