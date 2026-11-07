@@ -118,8 +118,13 @@ tracks:
     slug: "07-agentic-rag"
     title: "Agentic RAG and DeepAgent"
     stage: 2
-    status: "NOT_STARTED"
-    notebooks: []
+    status: "COMPLETED"
+    notebooks:
+      - id: "07-01"
+        file: "tracks/07-agentic-rag/01_agentic_rag_and_deepagent.ipynb"
+        title: "Autonomous Agentic RAG: Tool Calling, ReAct Loops, Plan-and-Solve & DeepAgent"
+        status: "VALIDATED"
+        runtime_sec: 1
 
   - id: "08"
     slug: "08-memory-engineering"
