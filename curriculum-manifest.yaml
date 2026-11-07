@@ -94,8 +94,13 @@ tracks:
     slug: "05-langchain-rag"
     title: "LangChain RAG"
     stage: 2
-    status: "NOT_STARTED"
-    notebooks: []
+    status: "VALIDATED"
+    notebooks:
+      - id: "05.1"
+        file: "tracks/05-langchain-rag/01_langchain_rag_pipeline.ipynb"
+        title: "LangChain Abstractions, LCEL, and Comparative RAG Architectures"
+        status: "VALIDATED"
+        runtime_sec: 1
 
   - id: "06"
     slug: "06-langgraph-rag"

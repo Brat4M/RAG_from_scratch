@@ -11,8 +11,8 @@
 | Stage | Name | Target Tracks | Status | Approval Date |
 |---|---|---|---|---|
 | **Stage 0** | Discovery and Initialization | Infrastructure, Config, Docs, Tests | **COMPLETED** | 2026-11-07 |
-| **Stage 1** | Foundations | Tracks 00–04 | **IN_PROGRESS** | 2026-11-07 |
-| **Stage 2** | Frameworks & Intelligent Retrieval | Tracks 05–13 | NOT_STARTED | — |
+| **Stage 1** | Foundations | Tracks 00–04 | **COMPLETED** | 2026-11-07 |
+| **Stage 2** | Frameworks & Intelligent Retrieval | Tracks 05–13 | **IN_PROGRESS** | 2026-11-08 |
 | **Stage 3** | Enterprise, Evaluation & Deployment | Tracks 14–16 | NOT_STARTED | — |
 
 ---
@@ -26,7 +26,7 @@
 | **02** | Embeddings and Vector Search | 1 | `COMPLETED` | 3 | ✅ 02.1, ✅ 02.2, ✅ 02.3 |
 | **03** | Retrieval Engineering | 1 | `IN_PROGRESS` | 2 | ✅ 03.1, ✅ 03.2 |
 | **04** | Generation, Synthesis & Evaluation (RAGAS / TruLens) | 1 | `COMPLETED` | 1 | ✅ 04.1 |
-| **05** | LangChain RAG | 2 | `NOT_STARTED` | 0 | — |
+| **05** | LangChain RAG | 2 | `COMPLETED` | 1 | ✅ 05.1 |
 | **06** | LangGraph RAG | 2 | `NOT_STARTED` | 0 | — |
 | **07** | Agentic RAG and DeepAgent | 2 | `NOT_STARTED` | 0 | — |
 | **08** | Memory Engineering | 2 | `NOT_STARTED` | 0 | — |
