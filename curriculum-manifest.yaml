@@ -1,23 +1,34 @@
 version: "1.0"
 project: "rag-engineering-academy"
 last_updated: "2026-11-07"
-stage: 0
-stage_status: "COMPLETED"
+stage: 1
+stage_status: "IN_PROGRESS"
 
 tracks:
   - id: "00"
     slug: "00-foundations"
     title: "Foundations and Environment"
     stage: 1
-    status: "NOT_STARTED"
-    notebooks: []
+    status: "IN_PROGRESS"
+    notebooks:
+      - id: "00.1"
+        file: "tracks/00-foundations/01_foundations_and_rag_architecture.ipynb"
+        title: "Foundations and End-to-End RAG Architecture Overview"
+        status: "VALIDATED"
+        runtime_sec: 2
 
   - id: "01"
     slug: "01-ingestion-chunking"
     title: "Ingestion and Chunking"
     stage: 1
-    status: "NOT_STARTED"
-    notebooks: []
+    status: "IN_PROGRESS"
+    notebooks:
+      - id: "01.1"
+        file: "tracks/01-ingestion-chunking/01_document_ingestion_and_pdf_parsing.ipynb"
+        title: "High-Fidelity Document Ingestion & Comparative PDF Parsing (PyMuPDF vs. pypdf)"
+        status: "VALIDATED"
+        runtime_sec: 1
+
 
   - id: "02"
     slug: "02-embeddings-vector-search"

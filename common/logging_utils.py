@@ -21,3 +21,8 @@ def setup_logger(name: str = "rag_academy", level: int = logging.INFO) -> loggin
         logger.addHandler(handler)
         logger.propagate = False
     return logger
+
+
+# Alias for convenience
+get_logger = setup_logger
+

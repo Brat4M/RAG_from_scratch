@@ -1,7 +1,7 @@
 # Project Status Dashboard — RAG Engineering Academy
 
-**Current Stage:** Stage 0 — Discovery and Repository Initialization  
-**Overall Status:** COMPLETED (Awaiting User Review & Stage 1 Approval)  
+**Current Stage:** Stage 1 — Foundations  
+**Overall Status:** IN_PROGRESS  
 **Last Updated:** 2026-11-07  
 
 ---
@@ -10,8 +10,8 @@
 
 | Stage | Name | Target Tracks | Status | Approval Date |
 |---|---|---|---|---|
-| **Stage 0** | Discovery and Initialization | Infrastructure, Config, Docs, Tests | **COMPLETED** | Pending Stage 1 Approval |
-| **Stage 1** | Foundations | Tracks 00–04 | NOT_STARTED | — |
+| **Stage 0** | Discovery and Initialization | Infrastructure, Config, Docs, Tests | **COMPLETED** | 2026-11-07 |
+| **Stage 1** | Foundations | Tracks 00–04 | **IN_PROGRESS** | 2026-11-07 |
 | **Stage 2** | Frameworks & Intelligent Retrieval | Tracks 05–13 | NOT_STARTED | — |
 | **Stage 3** | Enterprise, Evaluation & Deployment | Tracks 14–16 | NOT_STARTED | — |
 
@@ -21,8 +21,9 @@
 
 | Track | Title | Stage | Status | Notebooks Count | Validated |
 |---|---|---|---|---|---|
-| **00** | Foundations and Environment | 1 | `NOT_STARTED` | 0 | — |
-| **01** | Ingestion and Chunking | 1 | `NOT_STARTED` | 0 | — |
+| **00** | Foundations and Environment | 1 | `IN_PROGRESS` | 1 | ✅ 00.1 |
+| **01** | Ingestion and Chunking | 1 | `IN_PROGRESS` | 1 | ✅ 01.1 |
+
 | **02** | Embeddings and Vector Search | 1 | `NOT_STARTED` | 0 | — |
 | **03** | Retrieval Engineering | 1 | `NOT_STARTED` | 0 | — |
 | **04** | RAG from Scratch | 1 | `NOT_STARTED` | 0 | — |
