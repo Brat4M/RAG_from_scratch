@@ -1,2 +1,2 @@
-# Track 04 — RAG from Scratch
-# Pure Python implementation; depends only on requirements/base.txt
+# Track 04 — Generation, Synthesis, and Automated RAG Evaluation (RAGAS / TruLens)
+# Depends on requirements/base.txt (numpy, matplotlib, groq)

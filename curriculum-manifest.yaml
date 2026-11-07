@@ -65,15 +65,30 @@ tracks:
     slug: "03-retrieval-engineering"
     title: "Retrieval Engineering"
     stage: 1
-    status: "NOT_STARTED"
-    notebooks: []
+    status: "IN_PROGRESS"
+    notebooks:
+      - id: "03.1"
+        file: "tracks/03-retrieval-engineering/01_query_transformation_and_rewriting.ipynb"
+        title: "Query Transformation, Expansion, and Rewriting"
+        status: "VALIDATED"
+        runtime_sec: 1
+      - id: "03.2"
+        file: "tracks/03-retrieval-engineering/02_cross_encoder_reranking.ipynb"
+        title: "Advanced Reranking and Cross-Encoder Architectures"
+        status: "VALIDATED"
+        runtime_sec: 1
 
   - id: "04"
-    slug: "04-rag-from-scratch"
-    title: "RAG from Scratch"
+    slug: "04-generation-and-evaluation"
+    title: "Generation, Synthesis, and Automated RAG Evaluation (RAGAS / TruLens)"
     stage: 1
-    status: "NOT_STARTED"
-    notebooks: []
+    status: "VALIDATED"
+    notebooks:
+      - id: "04.1"
+        file: "tracks/04-generation-and-evaluation/01_rag_evaluation_framework.ipynb"
+        title: "Automated RAG Evaluation Framework (RAGAS & TruLens)"
+        status: "VALIDATED"
+        runtime_sec: 1
 
   - id: "05"
     slug: "05-langchain-rag"
