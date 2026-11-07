@@ -21,7 +21,7 @@ tracks:
     slug: "01-ingestion-chunking"
     title: "Ingestion and Chunking"
     stage: 1
-    status: "IN_PROGRESS"
+    status: "COMPLETED"
     notebooks:
       - id: "01.1"
         file: "tracks/01-ingestion-chunking/01_document_ingestion_and_pdf_parsing.ipynb"
@@ -39,13 +39,22 @@ tracks:
         status: "VALIDATED"
         runtime_sec: 1
 
-
   - id: "02"
     slug: "02-embeddings-vector-search"
     title: "Embeddings and Vector Search"
     stage: 1
-    status: "NOT_STARTED"
-    notebooks: []
+    status: "IN_PROGRESS"
+    notebooks:
+      - id: "02.1"
+        file: "tracks/02-embeddings-vector-search/01_dense_embeddings_and_distance_metrics.ipynb"
+        title: "Dense Embeddings, Vector Spaces, and Distance Metrics"
+        status: "VALIDATED"
+        runtime_sec: 1
+      - id: "02.2"
+        file: "tracks/02-embeddings-vector-search/02_vector_indexing_and_ann.ipynb"
+        title: "Vector Indexing & Approximate Nearest Neighbor (ANN) Search (HNSW & IVF)"
+        status: "VALIDATED"
+        runtime_sec: 1
 
   - id: "03"
     slug: "03-retrieval-engineering"
