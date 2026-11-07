@@ -1,0 +1,3 @@
+# Track 01 — Ingestion and Chunking
+# Base dependencies provide PyMuPDF and pypdf.
+# Additional packages will be added only if semantic chunking models are approved.

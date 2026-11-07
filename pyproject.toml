@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-engineering-academy"
+version = "0.1.0"
+description = "A rigorous, visual, first-principles RAG engineering curriculum"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+authors = [
+    { name = "Bharath Munuswamy", email = "bharat.anildude@gmail.com" }
+]
+license = { text = "MIT" }
+
+dependencies = [
+    "chromadb>=1.5,<2",
+    "groq>=1.7",
+    "numpy>=2.0",
+    "pandas>=2.0",
+    "pymupdf>=1.24",
+    "pypdf>=3.0",
+    "python-dotenv>=1.0",
+    "pydantic>=2.0",
+    "pydantic-settings>=2.0",
+    "matplotlib>=3.9",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "nbformat>=5.9",
+    "nbconvert>=7.0",
+    "jupyterlab>=4.0",
+    "ipykernel>=6.0",
+]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+pythonpath = ["."]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::FutureWarning",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["common*"]

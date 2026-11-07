@@ -1,0 +1,41 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# RAG Engineering Academy — Base Dependencies
+#
+# Core dependencies installed in .venv312 used across all 17 tracks.
+# Install: pip install -r requirements/base.txt
+#
+# Environment: Python 3.12 on Apple Silicon (arm64)
+# Note on onnxruntime: Requires Python <=3.14 on macOS arm64; .venv312 satisfies this.
+# Note on PyMuPDF: Licensed under AGPL-3.0 for open-source use.
+#                  Commercial use requires an Artifex license.
+#                  See docs/setup-guide.md for full licensing guidance.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Vector Database
+chromadb>=1.5,<2
+
+# LLM Provider
+groq>=1.7
+
+# Core Numerics & Data
+numpy>=2.0
+pandas>=2.0
+
+# Document Parsing
+pymupdf>=1.24          # Primary PDF extractor (AGPL-3.0)
+pypdf>=3.0             # Secondary PDF extractor (Apache 2.0; used for comparison)
+
+# Configuration & Validation
+python-dotenv>=1.0
+pydantic>=2.0
+pydantic-settings>=2.0
+
+# Testing & Notebook Infrastructure
+pytest>=8.0
+nbformat>=5.9
+nbconvert>=7.0
+jupyterlab>=4.0
+ipykernel>=6.0
+
+# Baseline Visualization
+matplotlib>=3.9

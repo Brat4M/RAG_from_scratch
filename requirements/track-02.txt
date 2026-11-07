@@ -1,0 +1,4 @@
+# Track 02 — Embeddings and Vector Search
+# Will add: sentence-transformers (local embeddings), plotly
+# sentence-transformers>=3.0
+# plotly>=5.0

@@ -3,24 +3,50 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 .pytest_cache/
+**/__pycache__/
 
-# Virtual environment
+# Virtual environments
 .venv/
+.venv312/
 venv/
+env/
 
 # Environment variables / secrets
 .env
 .env.*
 !.env.example
 
-# Jupyter
+# Jupyter checkpoints
 .ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# ChromaDB local persistence
+storage/
+.chroma/
+
+# Requirements lock files (regenerate from requirements/ files)
+requirements-lock.txt
+
+# Large binary / model files
+*.pt
+*.pth
+*.safetensors
+*.gguf
+*.bin
+
+# Build artifacts
+dist/
+build/
+
+# Downloaded datasets and model caches
+fixtures/downloads/
+.cache/
 
 # IDE
 .vscode/
 .idea/
 
-# OS
+# macOS
 .DS_Store
 
 # Logs

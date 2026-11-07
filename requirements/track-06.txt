@@ -1,0 +1,2 @@
+# Track 06 — LangGraph RAG
+# langgraph>=0.2

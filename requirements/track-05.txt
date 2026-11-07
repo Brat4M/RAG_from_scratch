@@ -1,0 +1,5 @@
+# Track 05 — LangChain RAG
+# langchain>=0.3
+# langchain-community>=0.3
+# langchain-groq>=0.2
+# langchain-chroma>=0.2

@@ -1,0 +1,2 @@
+# Track 09 — GraphRAG and Knowledge Graphs
+# neo4j>=5.0

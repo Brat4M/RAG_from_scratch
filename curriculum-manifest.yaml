@@ -1,0 +1,125 @@
+version: "1.0"
+project: "rag-engineering-academy"
+last_updated: "2026-11-07"
+stage: 0
+stage_status: "COMPLETED"
+
+tracks:
+  - id: "00"
+    slug: "00-foundations"
+    title: "Foundations and Environment"
+    stage: 1
+    status: "NOT_STARTED"
+    notebooks: []
+
+  - id: "01"
+    slug: "01-ingestion-chunking"
+    title: "Ingestion and Chunking"
+    stage: 1
+    status: "NOT_STARTED"
+    notebooks: []
+
+  - id: "02"
+    slug: "02-embeddings-vector-search"
+    title: "Embeddings and Vector Search"
+    stage: 1
+    status: "NOT_STARTED"
+    notebooks: []
+
+  - id: "03"
+    slug: "03-retrieval-engineering"
+    title: "Retrieval Engineering"
+    stage: 1
+    status: "NOT_STARTED"
+    notebooks: []
+
+  - id: "04"
+    slug: "04-rag-from-scratch"
+    title: "RAG from Scratch"
+    stage: 1
+    status: "NOT_STARTED"
+    notebooks: []
+
+  - id: "05"
+    slug: "05-langchain-rag"
+    title: "LangChain RAG"
+    stage: 2
+    status: "NOT_STARTED"
+    notebooks: []
+
+  - id: "06"
+    slug: "06-langgraph-rag"
+    title: "LangGraph RAG"
+    stage: 2
+    status: "NOT_STARTED"
+    notebooks: []
+
+  - id: "07"
+    slug: "07-agentic-rag"
+    title: "Agentic RAG and DeepAgent"
+    stage: 2
+    status: "NOT_STARTED"
+    notebooks: []
+
+  - id: "08"
+    slug: "08-memory-engineering"
+    title: "Memory Engineering"
+    stage: 2
+    status: "NOT_STARTED"
+    notebooks: []
+
+  - id: "09"
+    slug: "09-graphrag"
+    title: "GraphRAG and Knowledge Graphs"
+    stage: 2
+    status: "NOT_STARTED"
+    notebooks: []
+
+  - id: "10"
+    slug: "10-multimodal-rag"
+    title: "Multimodal RAG"
+    stage: 2
+    status: "NOT_STARTED"
+    notebooks: []
+
+  - id: "11"
+    slug: "11-google-okf"
+    title: "Google Open Knowledge Format (OKF)"
+    stage: 2
+    status: "NOT_STARTED"
+    notebooks: []
+
+  - id: "12"
+    slug: "12-typesafe-jev"
+    title: "TypeSafe Jev Decision Engine"
+    stage: 2
+    status: "NOT_STARTED"
+    notebooks: []
+
+  - id: "13"
+    slug: "13-decision-intelligence"
+    title: "Decision Intelligence with RAG"
+    stage: 2
+    status: "NOT_STARTED"
+    notebooks: []
+
+  - id: "14"
+    slug: "14-enterprise-rag"
+    title: "Enterprise RAG"
+    stage: 3
+    status: "NOT_STARTED"
+    notebooks: []
+
+  - id: "15"
+    slug: "15-evaluation-observability"
+    title: "Evaluation and Observability"
+    stage: 3
+    status: "NOT_STARTED"
+    notebooks: []
+
+  - id: "16"
+    slug: "16-finetuning-deployment"
+    title: "Fine-Tuning versus RAG and Deployment"
+    stage: 3
+    status: "NOT_STARTED"
+    notebooks: []
