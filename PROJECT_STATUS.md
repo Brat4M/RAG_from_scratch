@@ -22,7 +22,7 @@
 | Track | Title | Stage | Status | Notebooks Count | Validated |
 |---|---|---|---|---|---|
 | **00** | Foundations and Environment | 1 | `IN_PROGRESS` | 1 | ✅ 00.1 |
-| **01** | Ingestion and Chunking | 1 | `IN_PROGRESS` | 1 | ✅ 01.1 |
+| **01** | Ingestion and Chunking | 1 | `IN_PROGRESS` | 3 | ✅ 01.1, ✅ 01.2, ✅ 01.3 |
 
 | **02** | Embeddings and Vector Search | 1 | `NOT_STARTED` | 0 | — |
 | **03** | Retrieval Engineering | 1 | `NOT_STARTED` | 0 | — |

@@ -28,6 +28,16 @@ tracks:
         title: "High-Fidelity Document Ingestion & Comparative PDF Parsing (PyMuPDF vs. pypdf)"
         status: "VALIDATED"
         runtime_sec: 1
+      - id: "01.2"
+        file: "tracks/01-ingestion-chunking/02_text_cleaning_and_chunking.ipynb"
+        title: "Text Cleaning, Normalization, and Chunking Strategies (Fixed, Recursive & Semantic)"
+        status: "VALIDATED"
+        runtime_sec: 1
+      - id: "01.3"
+        file: "tracks/01-ingestion-chunking/03_structure_aware_and_code_chunking.ipynb"
+        title: "Advanced Structure-Aware Chunking (Markdown, Code AST, and Layout Trees)"
+        status: "VALIDATED"
+        runtime_sec: 1
 
 
   - id: "02"
